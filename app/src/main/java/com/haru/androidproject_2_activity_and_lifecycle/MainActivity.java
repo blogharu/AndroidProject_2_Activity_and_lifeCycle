@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
         Log.d(msg, "The onStop() event");
     }
 
+    /** Called when the activity is going to restart from the stop status. */
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        Log.d(msg, "The onRestart() event");
+    }
+
     /** Called just before the activity is destroyed. */
     @Override
     public void onDestroy() {
